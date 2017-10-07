@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<title>Attack On Titan</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="css/design.css">
 		<style>
 			.titan-content:hover{
-				box-shadow: 0 0 50px #ffffff;
+        box-shadow: 0 0 50px #ffffff;
 			}
 			p{
 				text-indent:4em;
@@ -15,8 +16,8 @@
 		</style>
 	</head>
 	<body>
-		<img src="images/logo.png" class="center-block" height="100px"><br>
-		<nav class="navbar navbar-default center-block" style="width:80%;border-radius:10px;border:1px solid white;box-shadow: 0 0 50px #ce1010;">
+		<img src="images/logo.png" class="center-block animated bounceInLeft" height="100px"><br>
+		<nav class="navbar navbar-default center-block animated bounceInLeft" style="width:80%;border-radius:10px;border:1px solid white;box-shadow: 0 0 50px #ce1010;">
 				<div class="container-fluid text-center">
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
@@ -35,10 +36,10 @@
 					</div>
 				</div>
 			</nav>
-		<div class="well center-block" style="background-color:black;opacity:0.8;width:80%;border-radius:10px;box-shadow: 0 0 50px #ffffff;color:white">
-			<h1>Home</h1>
+		<div class="well center-block animated bounceInLeft" style="background-color:black;opacity:0.8;width:80%;border-radius:10px;box-shadow: 0 0 50px #ffffff;color:white">
+			<h1 class="animated bounceInLeft">Home</h1>
 			<hr/>
-			<img src="images/wikiLogo.png" class="center-block">
+			<img src="images/wikiLogo.png" class="center-block animated bounceInLeft">
 			<div class="well center-block titan-content" style="visibility: hidden;width:80%;background-color:black;opacity:0.8;width:80%;border-radius:10px;color:white">
 				<p>
 					Attack on Titan (Japanese: 進撃の巨人 Hepburn: Shingeki no Kyojin, lit. "Advancing Giant") is a Japanese manga series written and illustrated by Hajime Isayama. The series began in Kodansha's Bessatsu Shōnen Magazine on September 9, 2009, and has been collected into 23 tankōbon volumes as of August 2017. It is set in a world where humanity lives in cities surrounded by enormous walls; a defense against the Titans, gigantic humanoids that eat humans seemingly without reason. The story initially centers on Eren Yeager and his childhood friends Mikasa Ackerman and Armin Arlert, who join the military to fight the Titans after their home town is invaded and Eren's mother is eaten. However, as the story progresses and the truths about the Titans are slowly revealed to the reader, the narrative shifts to encompass Historia Reiss, squad leader Levi, Eren's father Grisha, and other supporting characters.
@@ -58,7 +59,7 @@
       $(function(){
         $(window).bind("scroll.alert", function() {
           var $this = $(this);
-          if ($this.scrollTop() >= 50) {
+          if ($this.scrollTop() >= 400) {
             $('.titan-content').css('visibility','visible').hide().fadeIn();
             $this.unbind("scroll.alert");
           }
