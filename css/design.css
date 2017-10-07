@@ -1,0 +1,19 @@
+body{
+  background: url("../images/background.jpg") no-repeat;
+  background-size:cover;
+  overflow-y:scroll;
+}
+.navbar-default {
+  background: rgba(0,0,0,0) linear-gradient(to right,#590302,#bf1111,#590302) repeat scroll 0 0 !important;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
