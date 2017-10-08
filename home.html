@@ -37,8 +37,8 @@
 		</style>
 	</head>
 	<body>
-    <div class="fullscreen-bg">
-      <video autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+    <div class="fullscreen-bg animated zoomInUp">
+      <video autoplay class="fullscreen-bg__video">
           <source src="videos/opening.MP4" type="video/mp4">
 			</video>
 			<img id="guno" class="loaderPic" src="images/guno.jpg" height="200px" style="display:none;z-index:2001;position:absolute;top:50px;left:200px;">
@@ -48,7 +48,7 @@
 		</div>
 		<div class="hidden-content" style="display:none">
 			<img src="images/logo.png" class="center-block animated bounceInLeft" height="100px"><br>
-			<nav class="navbar navbar-default center-block" style="visibility:hidden;width:80%;border-radius:10px;border:1px solid white;box-shadow: 0 0 50px #ce1010;">
+			<nav class="navbar navbar-default center-block animated bounceInLeft" style="visibility:hidden;width:80%;border-radius:10px;border:1px solid white;box-shadow: 0 0 50px #ce1010;">
 				<div class="container-fluid text-center">
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
@@ -162,8 +162,6 @@
 					}
 				});
 			});
-			setTimeout("$('.fullscreen-bg').addClass('animated fadeOutRight');",13000);
-			setTimeout("$('.hidden-content').fadeIn('5000');",13500);
 			setTimeout("$('#guno').fadeIn('fast');",3900);
 			setTimeout("$('#vines').fadeIn('fast');",4400);
 			setTimeout("$('#santos').fadeIn('fast');",4900);
@@ -180,6 +178,12 @@
 				$('#santos').addClass("fastAnimation fadeOutDown");
 				$('#young').addClass("fastAnimation fadeOutRight");
 			},9000);
+			setTimeout(function(){
+				$('.fullscreen-bg').removeClass('zoomInUp');
+				$('.fullscreen-bg').addClass('zoomOutRight');
+			},13000);
+			setTimeout("$('.hidden-content').fadeIn('5000');",13300);
+			setTimeout("$('.navbar').removeClass('bounceInLeft')",15000);
 		</script>
 	</body>
 </html>
