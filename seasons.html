@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Attack On Titan</title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="css/design.css">
+		<style>
+			th,td{
+				padding:5px;
+				text-align:center;
+				background-color:rgb(156, 4, 4);
+				color:white;
+			}
+			td{
+				background-color:black !important;
+			}
+			tr.episodeDescription{
+				display:none
+			}
+			tr.episodeDescription td{
+				text-align:left;
+				text-indent:4em;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/logo.png" class="center-block animated bounceInUp" height="100px"><br>
+		<nav class="navbar navbar-default center-block" style="visibility:hidden;width:80%;border-radius:10px;border:1px solid white;box-shadow: 0 0 50px #ce1010;">
+			<div class="container-fluid text-center">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li class="dropdown" style="cursor:pointer">
+							<a class="dropdown-toggle" data-toggle="dropdown">Characters<span class="caret"></span></a>
+							<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+								<li class="dropdown-submenu">
+									<a href="#">Cadet Corps</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Eren Jaeger</a></li>
+										<li><a href="#">Mikasa Ackermann</a></li>
+										<li><a href="#">Armin Arlelt</a></li>
+										<li><a href="#">Reiner Braun</a></li>
+										<li><a href="#">Bertholdt Hoover</a></li>
+										<li><a href="#">Sasha Braus</a></li>
+										<li><a href="#">Conny Springer</a></li>
+										<li><a href="#">Jean Kirschtein</a></li>
+										<li><a href="#">Historia Reiss</a></li>
+										<li><a href="#">Ymir</a></li>
+									</ul>
+								</li><li class="dropdown-submenu">
+									<a href="#">Scout Regiment</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Erwin Smith</a></li>
+										<li><a href="#">Levi</a></li>
+										<li><a href="#">Hange Zoë</a></li>
+										<li><a href="#">Miche Zacharius</a></li>
+										<li><a href="#">Moblit</a></li>
+										<li><a href="#">Keiji</a></li>
+										<li><a href="#">Goggles</a></li>
+										<li><a href="#">Nifa</a></li>
+										<li><a href="#">Ilse Langnar</a></li>
+									</ul>
+								</li><li class="dropdown-submenu">
+									<a href="#">Garrison</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Dot Pyxis</a></li>
+										<li><a href="#">Hannes</a></li>
+										<li><a href="#">Kitz Woermann</a></li>
+										<li><a href="#">Rico Brzenska</a></li>
+										<li><a href="#">Anka Rheinberger</a></li>
+										<li><a href="#">Phil</a></li>
+									</ul>
+								</li><li class="dropdown-submenu">
+									<a href="#">Military Police</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Nile Dawk</a></li>
+										<li><a href="#">Marlo Freudenberg</a></li>
+										<li><a href="#">Hitch Dreyse</a></li>
+									</ul>
+								</li><li class="dropdown-submenu">
+									<a href="#">Civilians</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Grisha Jaeger</a></li>
+										<li><a href="#">Carla Jaeger</a></li>
+										<li><a href="#">Nick</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#">Titans</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Colossal Titan</a></li>
+										<li><a href="#">Armored Titan</a></li>
+										<li><a href="#">Mysterious Titan</a></li>
+										<li><a href="#">Female Titan</a></li>
+										<li><a href="#">Beast Titan</a></li>
+										<li><a href="#">Dancing Titan</a></li>
+										<li><a href="#">Smiling Titan</a></li>
+										<li><a href="#">Sawney</a></li>
+										<li><a href="#">Beane</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="active"><a href="javascript:void(0)">Seasons</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="well center-block animated bounceInUp" style="background-color:black;opacity:0.8;width:80%;border-radius:10px;box-shadow: 0 0 50px #ffffff;color:white">
+			<h1 class="animated bounceInUp">Seasons</h1>
+			<hr/>
+			<table border="1" style="width:100%">
+				<th>No. Overall</th>
+				<th>No. in Season</th>
+				<th>Title</th>
+				<th>Directed By</th>
+				<th>Written By</th>
+				<th>Original Air Date</th>
+				<th>English Air Date</th>
+				<th></th>
+				<tr>
+					<td>1</td>
+					<td>1</td>
+					<td>"To You, in 2000 Years: The Fall of Shiganshina, Part 1"<br/>"Ni-sen Nen-go no Kimi e -Shiganshina Kanraku (1)-"<br/>(二千年後の君へ ―シガンシナ陥落①―) </td>
+					<td>Hiroyuki Tanaka</br>Tetsurō Araki</td>
+					<td>Yasuko Kobayashi</td>
+					<td>April 7, 2013	</td>
+					<td>May 3, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(1);">See More..</button></td>
+				</tr>
+				<tr id="episode1" class="episodeDescription">
+					<td colspan="8">For over a century, humans have been living in settlements surrounded by three gigantic walls, which prevent the Titans, giant humanoid creatures who eat humans, from entering. Young Eren Yeager, of the town of Shiganshina, wishes to see the outside world by joining the Survey Corps, as he likens living in the cities to livestock. Despite this, his adopted sister Mikasa Ackerman and their mother Carla Yeager are against him joining the Scouts. Even after seeing the Scouts return home with large casualties, Eren expresses his interest to join which impresses his father Grisha Yeager. After Eren and Mikasa rescue their friend Armin Arlert from a group of delinquents due to his views that the walls will not protect them forever, a Titan much taller than the walls (later named the Colossal Titan) suddenly appears and knocks down the gate to Shiganshina, which lies in the outer edge of Wall Maria), allowing smaller Titans to enter. As the town erupts into mass panic, Eren and Mikasa rush to their home to find their mother pinned under their collapsed house. Carla begs them to flee, but they refuse until the city guard Hannes arrives and takes them away. Eren watches in horror as the Smiling Titan eats Carla. </td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>2</td>
+					<td>"That Day: The Fall of Shiganshina, Part 2"<br/>"Sono Hi -Shiganshina Kanraku (2)-"<br/>(二千年後の君へ ―シガンシナ陥落①―) </td>
+					<td>Masashi Koizuka</td>
+					<td>Yasuko Kobayashi</td>
+					<td>April 14, 2013</td>
+					<td>May 10, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(2);">See More..</button></td>
+				</tr>
+				<tr id="episode2" class="episodeDescription">
+					<td colspan="8">Hannes apologizes to Eren for not saving his mother, admitting he was afraid of the Titan and that both Eren and Mikasa are still weak children. Some of the Shiganshina townsfolk escape to the inner Wall Maria while the soldiers try to hold off the Titans. The soldiers try to close the gate, but one of the Titans (later named the Armored Titan) rams the gate, breaching inner Wall Maria, and causing those inside to retreat even further inside Wall Rose. Some time later, Eren has a strange dream in which his grieving father forcefully gives him an injection and his key before being woken up by Mikasa. Eren grows disgusted with the people of Wall Rose as the latter do not like sharing their food or homes with the refugees. During the next year, as a food shortage becomes apparent, the government orders the refugees to either work on the farms or fight to reclaim Wall Maria. About 250,000 people, 20% of the populace choose to fight but they are wiped out by the Titans. Eren vows revenge and joins the army along with Mikasa and Armin. </td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>3</td>
+					<td>"A Dim Light Amid Despair: Humanity's Comeback, Part 1"<br/>"Zetsubō no Naka de Nibuku Hikaru -Jinrui no Saiki (1)-"<br/>(絶望の中で鈍く光る ―人類の再起①―)</td>
+					<td>Kiyoshi Fukumoto</td>
+					<td>Hiroshi Seko</td>
+					<td>April 21, 2013</td>
+					<td>May 17, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(3);">See More..</button></td>
+				</tr>
+				<tr id="episode3" class="episodeDescription">
+					<td colspan="8">The drill instructor Keith Shardis inspects the new recruits and provides a barrage of verbal insults. When he comes across Sasha Braus, who is eating a potato, he punishes her by having her run around the camp until sunset and not giving her any food or drink. Eren develops a rivalry with Jean Kirschtein, who desires a safe and easy position in the Military Police within the inner city walls. The recruits train on an Omni-directional Mobility Gear[1] apparatus, where they have to balance themselves while suspended on cables. After Eren has trouble balancing, he asks Reiner Braun and Bertolt Hoover for help and discover they too are among the few who have personally encountered Titans. The next day, Eren balances on the apparatus but falls, however Keith discovers that Eren's apparatus was defective and passes him after a retry with different equipment. </td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>4</td>
+					<td>"The Night of the Closing Ceremony: Humanity's Comeback, Part 2"<br/>"Kaisan Shiki no Yoru -Jinrui no Saiki (2)-"<br/>(解散式の夜 ―人類の再起②―)</td>
+					<td>Makoto Bessho</td>
+					<td>Yasuko Kobayashi</td>
+					<td>April 28, 2013</td>
+					<td>May 24, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(4);">See More..</button></td>
+				</tr>
+				<tr id="episode4" class="episodeDescription">
+					<td colspan="8">Five years since Wall Maria fell, Keith evaluates the recruits for their strengths and weaknesses. After training in hand-to-hand combat with Reiner and Annie Leonhart, Eren learns later that night that Jean and several other recruits hope to join the Military Police to avoid having to fight Titans. On graduation day, Eren and Mikasa rank among the top ten of their class. They are eligible to join the Military Police, but Eren declines and announces that he is joining the Survey Corps on the front lines, leading Armin and Mikasa to join him. They are assigned to the Trost District, one of the cities which is at the outer edge of Wall Rose, where they discover other classmates have joined. The Colossal Titan appears and breaches the gate. Once Eren regains his composure, he takes command and orders a counterattack. </td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>5</td>
+					<td>"First Battle: The Struggle for Trost, Part 1"<br/>"Uijin -Torosuto-ku Kōbōsen (1)-"<br/>(初陣　―トロスト区攻防戦①―)</td>
+					<td>Shinpei Ezaki</td>
+					<td>Hiroshi Seko</td>
+					<td>May 5, 2013</td>
+					<td>May 31, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(5);">See More..</button></td>
+				</tr>
+				<tr id="episode5" class="episodeDescription">
+					<td colspan="8">As Eren attacks the Colossal Titan, it destroys the wall's cannons, revealing itself to be intelligent. As Eren prepares to attack its weak point, it inexplicably vanishes in a burst of steam. The Military Police scrambles to evacuate the people of the Trost District and set up defenses before the Titans enter the city. Eren calms Armin and Jean, who both start having nervous breakdowns due to the approaching Titans. Assigned by Commander Kitts Woerman of the Garrison to different squads, Mikasa helps with the evacuation while Eren and Armin provide backup at the front lines. Despite Mikasa's protest of wanting to stay and protect Eren, he convinces her to do her duty after promising her he will not die. With the Titans now in the city, Eren recalls his lessons that in order to kill a Titan, they must strike the nape of its neck. As Eren and Armin's squad attack, one by one their comrades are killed or eaten by the Titans, with Eren himself losing his left leg. Armin, paralyzed with fear upon seeing his comrades' fates, is picked up by a bearded Titan and almost swallowed. As Eren recalls his past, where he and Armin wished to see the world outside the walls, he manages to drag and toss Armin out of the Bearded Titan's mouth at the last moment. Eren reaches for Armin with his left arm out of the Bearded Titan's mouth, but the bearded Titan closes its jaws, severing Eren's arm and swallowing him. </td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>6</td>
+					<td>"The World the Girl Saw: The Struggle for Trost, Part 2"<br/>"Shōjo ga Mita Sekai -Torosuto-ku Kōbōsen (2)-"<br/>(少女が見た世界　―トロスト区攻防戦②―)</td>
+					<td>Tomomi Ikeda</td>
+					<td>Hiroshi Seko</td>
+					<td>May 12, 2013</td>
+					<td>June 7, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(6);">See More..</button></td>
+				</tr>
+				<tr id="episode6" class="episodeDescription">
+					<td colspan="8">Armin awakens to find himself surrounded by Connie Springer, Krista Lenz and Ymir. When Armin breaks down in tears after Connie asks what happened to his squad, Ymir correctly deduces that they are all dead. As Armin heads back to the rear guard, he blames himself for being weak and not saving Eren. Meanwhile, a greedy merchant tries to force his cargo into the city's exit gate and refuses to allow the refugees to go first. As the crowd grows impatient, an Abnormal Titan suddenly approaches but is killed by Mikasa right before it can reach the crowd. When she realizes the merchant is the cause of the holdup at the gate, she threatens him into moving his cargo for the refugees. As she is thanked by a mother and daughter, Mikasa has a flashback. In the year 844, a year before the fall of Wall Maria, Mikasa is targeted by slave traders, who murder her parents in a struggle. After Grisha and Eren discover the dead bodies while making a visit, Grisha orders Eren to return home. Instead, Eren tracks down the slave traders to a nearby hut and kills two of them in an attempt to save Mikasa. However, the third slave trader appears and begins strangling Eren, who tells Mikasa to kill the man if she wants to live, which she does after overcoming her fear and gaining resolve. Eventually, the children are found by the Military Police. As Mikasa cries that she has no home to go back to, she is invited to live with Grisha and Eren, who gives her a red scarf to wear. Back in the present, Mikasa slays more Titans and goes to help the other squads evacuate. </td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>7</td>
+					<td>"Small Blade: The Struggle for Trost, Part 3"<br/>"Chiisana Yaiba -Torosuto-ku Kōbōsen (3)-"<br/>(小さな刃　―トロスト区攻防戦③―)</td>
+					<td>Yuzuru Tachikawa</td>
+					<td>Hiroshi Seko</td>
+					<td>May 19, 2013</td>
+					<td>June 14, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(7);">See More..</button></td>
+				</tr>
+				<tr id="episode7" class="episodeDescription">
+					<td colspan="8">The surviving squads, unable to reach the inner walls due to their Omni-directional Mobility Gears being low on gas, lose their fighting spirit as the nearby supply depot is overrun by Titans. Mikasa learns from Armin that his entire squad perished, including Eren. Seemingly unfazed, Mikasa rallies the others to reclaim the supply depot, and they are inspired to join her in the attack. Mikasa ends up running out of gas mid-air and falls into an alleyway, leading Jean to assume command. However, he loses his nerve when he sees some of his comrades being eaten by Titans. As a blonde Titan approaches Mikasa, she at first accepts her fate but instinctively starts fighting back after remembering Eren's words of perseverance. As she prepares to attack with her only remaining broken blade, another Titan appears behind her and brutally kills the blonde Titan, much to her confusion. Armin and Connie show up, and they are all shocked to see the Rogue Titan not only fighting other Titans, but also showing knowledge of their weak point and using hand-to-hand combat techniques, while completely ignoring the humans. Armin gives Mikasa his gas tanks and blades so that she can support the others at the supply depot. Mikasa, however, refuses to leave him behind and ponders on the Rogue Titan's strange behavior. </td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>8</td>
+					<td>"I Can Hear His Heartbeat: The Struggle for Trost, Part 4"<br/>"Shinzō no Kodō ga Kikoeru -Torosuto-ku Kōbōsen (4)-"<br/>(心臓の鼓動が聞こえる ―トロスト区攻防戦④―)</td>
+					<td>Satonobu Kikuchi<br/>Shinpei Ezaki<br/>Tatsuma Minamikawa</td>
+					<td>Noboru Takagi</td>
+					<td>May 26, 2013</td>
+					<td>June 21, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(8);">See More..</button></td>
+				</tr>
+				<tr id="episode8" class="episodeDescription">
+					<td colspan="8">With the supply depot area swarming with Titans, Armin has the idea of using the Rogue Titan to defeat them. Mikasa and Connie agree with his plan and defeat the Titans attacking it, before rushing to the depot. Meanwhile, Jean and the others reach the supply depot despite suffering more casualties on the way, with Armin, Mikasa and Connie arriving soon after. Armin's plan works, but while the Rogue Titan is able to attract the enemies outside, seven smaller Titans remain in the fuel storage area. With their equipment out of fuel, Armin devises another plan. The survivors draw the Titans' attention to an elevator and shoot them in the eyes to blind them, while seven of them jump from the ceiling to finish them off. Sasha and Connie fail to kill their targets but are saved by Mikasa and Annie. Having successfully replenished their fuel, the soldiers prepare to retreat, but they see the Rogue Titan defeating all of the other Titans before collapsing, and much to their shock, watch Eren emerge from its body. Mikasa reaches Eren and cries upon confirming that he is alive, while Armin notices that his severed leg and arm have somehow regenerated as well. </td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>9</td>
+					<td>"Whereabouts of His Left Arm: The Struggle for Trost, Part 5"<br/>"Hidariude no Yukue -Torosuto-ku Kōbōsen (5)-"<br/>(左腕の行方 ―トロスト区攻防戦⑤―)</td>
+					<td>Yoshiyuki Fujiwara</td>
+					<td>Yasuko Kobayashi</td>
+					<td>June 2, 2013</td>
+					<td>June 28, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(9);">See More..</button></td>
+				</tr>
+				<tr id="episode9" class="episodeDescription">
+					<td colspan="8">Captain Levi of the Survey Corps and his squad successfully retake a town from the Titans until they are called to an emergency at the Trost District as the Titans have invaded the city. It is revealed that when Eren was eaten and swallowed by the bearded Titan, he found himself in its stomach along with the bodies of its victims, one of whom was still alive. His rage at the Titans caused him to burst out of the bearded Titan's stomach by transforming into a Titan himself and going on a rampage against them. To Eren's confusion when regaining consciousness, Kitts's men aim their weapons at him. Although Eren's comrades saw him emerge from the Rogue Titan, they all agreed to keep it a secret and bring him back inside Wall Rose. However, Kitts also witnessed this and has his men corner Eren, but Armin and Mikasa defend him. Kitts accuses Eren of actually being a Titan in disguise, but Eren has no memories of becoming a Titan or how his limbs grew back. Even though Eren claims he is human, Kitts fearfully orders the cannons to fire on the three of them. As they try to escape, Eren recalls hazy memories of his father giving him an injection, telling him to reclaim Wall Maria and go to their home's basement with his key. In order to protect Mikasa and Armin from the cannons, Eren partially transforms himself into the Rogue Titan, sheltering them inside his ribs. </td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>10</td>
+					<td>"Response: The Struggle for Trost, Part 6"<br/>"Kotaeru -Torosuto-ku Kōbōsen (6)-"<br/>(応える ―トロスト区攻防戦⑥―)</td>
+					<td>Hiroyuki Tanaka</td>
+					<td>Hiroshi Seko</td>
+					<td>June 9, 2013</td>
+					<td>July 12, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(10);">See More..</button></td>
+				</tr>
+				<tr id="episode10" class="episodeDescription">
+					<td colspan="8">After partially transforming himself to protect Mikasa and Armin, Eren climbs out of the Titan to talk with the two regarding the basement in his former house and how he believes that it holds the secret to mankind's preservation and the key to destroying the Titans. Kitts is still afraid and once again orders the cannon to be loaded. Eren comes up with two plans of escape. The first is for him to transform into a Titan and run away on his own, forever criminalizing himself in the eyes of humanity. The second is to have Armin convince Kitts that Eren is an asset, not a danger. Armin has several flashbacks and comes to the realization that even though he is physically weak and cowardly, he can still defend his friends, and decides to try and talk their way out of being executed. Armin tentatively convinces Kitts, only to have him be overcome by fear and give the order to fire once more. The order is halted when Commander Dot Pyxis and his men intervene, sparing their lives. In return, Pyxis asks Eren if he will transform himself to block the gap in Wall Rose to prevent more Titans from getting in. Eren agrees, regardless of whether or not he will be able to control his Titan form. </td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>11</td>
+					<td>"Idol: The Struggle for Trost, Part 7"<br/>"Gūzō -Torosuto-ku Kōbōsen (7)-"<br/>(偶像 ―トロスト区攻防戦⑦―)</td>
+					<td>Kiyoshi Fukumoto</td>
+					<td>Hiroshi Seko</td>
+					<td>June 16, 2013</td>
+					<td>July 19, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(11);">See More..</button></td>
+				</tr>
+				<tr id="episode11" class="episodeDescription">
+					<td colspan="8">After partially transforming himself to protect Mikasa and Armin, Eren climbs out of the Titan to talk with the two regarding the basement in his former house and how he believes that it holds the secret to mankind's preservation and the key to destroying the Titans. Kitts is still afraid and once again orders the cannon to be loaded. Eren comes up with two plans of escape. The first is for him to transform into a Titan and run away on his own, forever criminalizing himself in the eyes of humanity. The second is to have Armin convince Kitts that Eren is an asset, not a danger. Armin has several flashbacks and comes to the realization that even though he is physically weak and cowardly, he can still defend his friends, and decides to try and talk their way out of being executed. Armin tentatively convinces Kitts, only to have him be overcome by fear and give the order to fire once more. The order is halted when Commander Dot Pyxis and his men intervene, sparing their lives. In return, Pyxis asks Eren if he will transform himself to block the gap in Wall Rose to prevent more Titans from getting in. Eren agrees, regardless of whether or not he will be able to control his Titan form. </td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>12</td>
+					<td>"Wound: The Struggle for Trost, Part 8"<br/>"Kizu -Torosuto-ku Kōbōsen (8)-"<br/>(傷 ―トロスト区攻防戦⑧―)</td>
+					<td>Shintaro Itoga</td>
+					<td>Noboru Takagi</td>
+					<td>June 23, 2013</td>
+					<td>July 26, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(12);">See More..</button></td>
+				</tr>
+				<tr id="episode12" class="episodeDescription">
+					<td colspan="8">Mikasa tries to reason with Eren in Titan form, but to no avail. Eren continues his attack and accidentally incapacitates himself, slumping to the ground. The squad protecting Eren sends up a red flare to signal that the plan has failed, much to the dismay of the troops observing from the wall. As Armin heads toward Eren to investigate, the elite squadron argues and eventually agrees to protect Eren instead of abandoning him, still recognizing him as a valuable military asset. During the operation, Jean is separated from Connie and Annie after his Omni-directional Mobility Gear malfunctions, forcing him to hide from two Titans in a building. Armin reaches the unconscious Eren, but Mikasa calls to him, warning that he is in a dangerous state. Armin plunges his sword into the side of Eren's neck, which briefly awakens him. As Armin speaks to him of the outside world and reminds him of his promise to kill all the Titans, Eren leaves his dreamlike state and regains control. </td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>13</td>
+					<td>"Primal Desire: The Struggle for Trost, Part 9"<br/>"Genshoteki Yokkyū -Torosuto-ku Kōbōsen (9)-"<br/>(原初的欲求 ―トロスト区攻防戦⑨―)</td>
+					<td>Masashi Koizuka</td>
+					<td>Noboru Takagi</td>
+					<td>June 30, 2013</td>
+					<td>August 2, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(13);">See More..</button></td>
+				</tr>
+				<tr id="episode13" class="episodeDescription">
+					<td colspan="8">Jean manages to acquire another set of Omni-directional Mobility Gear from a dead soldier and escapes, thanks to Annie, Connie and Marco Bott distracting the Titans. With Eren in Titan form now fully awake and carrying the boulder towards the gate as planned, Ian orders everyone to protect Eren from the Titans at all costs, with many of them sacrificing their lives in the process. Eren finally blocks the open gate with the boulder, and a tearful Rico, the only remaining member of the elite squad, fires a yellow flare to signal that the operation was a success. As Armin tries to pull Eren from his Titan body, they are cornered by two Titans but are then saved by the timely arrival of Levi. With the gate finally sealed, the army eliminates all of the Titans remaining in the Trost District except two, which are captured for research. As the army counts their casualties, a shocked Jean finds Marco's dead and half-eaten body, Sasha's group is horrified to find a pile of corpses regurgitated from a Titan, and Annie mourns one of her dead comrades. Meanwhile, Eren is chained in a cell guarded by the Military Police, where he is visited by Levi and Commander Erwin Smith of the Survey Corps. After listening to his story and reasons for wanting the Titans dead, Levi allows Eren to join his squad under his command, though Eren is warned that Levi would personally kill him if he ever betrays the squad or loses control again. </td>
+				</tr>
+				<tr>
+					<td>13.5</td>
+					<td>13.5</td>
+					<td>"Since That Day"<br/>"Ano Hi kara"</td>
+					<td>Hiroyuki Tanaka</td>
+					<td>---</td>
+					<td>July 7, 2013</td>
+					<td>---</td>
+					<td><button class="btn btn-default" onclick="displayDescription(135);">See More..</button></td>
+				</tr>
+				<tr id="episode135" class="episodeDescription">
+					<td colspan="8">This is a recap episode of the events during the first thirteen episodes. </td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>14</td>
+					<td>"Can't Look Into His Eyes Yet: Eve of the Counterattack, Part 1"<br/>"Mada Me o Mirenai -Hangeki Zen'ya (1)-"<br/>(まだ目を見れない ―反撃前夜①―)</td>
+					<td>Keisuke Onishi<br/>Shinpei Ezaki</td>
+					<td>Yasuko Kobayashi	</td>
+					<td>July 14, 2013</td>
+					<td>August 9, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(14);">See More..</button></td>
+				</tr>
+				<tr id="episode14" class="episodeDescription">
+					<td colspan="8">When word spreads about a Titan siding with humankind, the populace is divided over whether Eren is their savior or their end. Eren is brought to a military tribunal to be judged by Commander-in-Chief Darius Zackly, who will decide whether Eren should be given to the Military Police or the Survey Corps, both of whom have their own reasons for wanting him. The Military Police wants Eren killed as he is seen by them as a menace, while the Survey Corps wants to use him to retake Wall Maria. As both sides get into heated arguments over Eren's Titan powers, one of the merchants siding with the Military Police accuses Mikasa of being a Titan as well, much to Eren's anger. When Eren calls out the Military Police and their supporters for their cowardice, one of them prepares to shoot him, only for Levi to beat Eren down. Despite being brutally beaten, he does not transform into a Titan, which Levi uses to show to the court that the Survey Corps can control Eren, and proposes that he is to be made part of his squad. In the end, Zackly gives Eren to the Survey Corps where Erwin and Hange Zoë welcome him. As Eren is getting treatment for his wounds, they discover that he grew back a tooth knocked out during Levi's beating. </td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>15</td>
+					<td>"Special Operations Squad: Eve of the Counterattack, Part 2"<br/>"Tokubetsu Sakusen-han -Hangeki Zen'ya (2)-"<br/>(特別作戦班 ―反撃前夜②―)</td>
+					<td>Kiyoshi Fukumoto</td>
+					<td>Hiroshi Seko</td>
+					<td>July 21, 2013</td>
+					<td>August 16, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(15);">See More..</button></td>
+				</tr>
+				<tr id="episode15" class="episodeDescription">
+					<td colspan="8">Levi and his Special Operations Squad, composed of Petra Ral, Oluo Bozado, Eld Jinn and Gunther Schultz, who are all elites chosen by him, bring Eren to the old Survey Corps headquarters where Eren will learn to control his Titan's power under their watch. As Levi orders the castle to be cleaned, Petra assures Eren that despite his rude and harsh demeanor, Levi does care about the people under his command. Meanwhile, Erwin and Mike Zacharias discuss the new recruits joining the Survey Corps and how they must prove Eren's usefulness to Military Command within a month. While discussing his powers with Levi's squad, Hange arrives and asks Eren to help her in her experiments with the two Titans they have captured, which she named Sawney and Beane. Hange is revealed to have an obsession with Titans where she treats them like people despite the many times she puts herself in danger. During her all night talks with Eren, she reveals that the Titans need sunlight to survive and their bodies are disproportionately light despite their size. But the next day, the Survey Corps discover Sawney and Beane have been killed. As Hange mourns for them, the Survey Corps deduce that the culprit is a soldier who escaped using their Omni-directional Mobility Gear, which makes Eren wonder who their true enemy is. </td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>16</td>
+					<td>"What Needs to be Done Now: Eve of the Counterattack, Part 3"<br/>"Ima, Nani o Subeki ka -Hangeki Zen'ya (3)-"<br/>(今、何をすべきか ―反撃前夜③―)</td>
+					<td>Keisuke Onishi<br/>Yasushi Muroya</td>
+					<td>Yasuko Kobayashi</td>
+					<td>July 28, 2013</td>
+					<td>August 23, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(16);">See More..</button></td>
+				</tr>
+				<tr id="episode16" class="episodeDescription">
+					<td colspan="8">As the recruits are investigated over Sawney and Beane's deaths, Annie, who will be joining the Military Police later, gives advice to Armin and Connie that it is their choice to decide on which branch of the military they join. The recruits from the 104th are later greeted by Commander Erwin at the 'Decision Ceremony', where he tells them that the goal of the Survey Corps's expedition the following month is to reclaim Shiganshina and find the secret hidden in Eren's home basement. After telling the recruits of the Survey Corps's high mortality rate during each expedition, Erwin tells the recruits that they may stay and join them or leave to join the other branches. Most recruits leave, but Jean joins the Survey Corps in honor of Marco with others joining him as well including Mikasa, Armin, Reiner, Bertolt, Connie, Sasha, Krista and Ymir, despite their fears. As the Survey Corps prepare themselves for the expedition, Eren is reunited with his friends and learns what happened to the others. Jean questions whether Eren can truly control his Titan powers as they are risking their lives for him. With everything ready, the Survey Corps begin their 57th Expedition beyond the walls. </td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>17</td>
+					<td>"Female Titan: The 57th Exterior Scouting Mission, Part 1"<br/>"Megata no Kyojin -Dai Gojū-Nana Kai Hekigai Chōsa (1)-"<br/>(女型の巨人 ―第57回壁外調査①―)</td>
+					<td>Daisuke Tokudo<br/>Masashi Koizuka</td>
+					<td>Hiroshi Seko</td>
+					<td>August 4, 2013</td>
+					<td>September 6, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(17);">See More..</button></td>
+				</tr>
+				<tr id="episode17" class="episodeDescription">
+					<td colspan="8">As the expedition gets underway, the Survey Corps assemble into their 'Long-Range Scouting Formation' wherein the Scouts spread out around the main wagon train and report by flare gun if a Titan is nearby so the group can steer to avoid them and avoid conflict if possible. After Armin's squad manages to kill an Abnormal Titan, a Titan with a feminine body suddenly appears from the right flank at high speed. Much to Armin's shock, the Female Titan's body can withstand their blades and is intelligent enough to kill his seniors easily. The Female Titan captures Armin but after removing his hood and seeing his face, she leaves him alive and continues running. Armin is picked up by Reiner and Jean, who reveals that their right flank was wiped out by the Titans, which makes Armin realize it was the Female Titan's work and she is possibly another Titan Shifter like Eren. When the three of them give conflicting sources on where Eren is in the formation, they realize the Female Titan's target is Eren and they must stop her. Despite their failed attempts to attack, she leaves them and heads towards the centre. </td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>18</td>
+					<td>"Forest of Giant Trees: The 57th Exterior Scouting Mission, Part 2"<br/>"Kyodaiju no Mori -Dai Gojū-Nana Kai Hekigai Chōsa (2)-"<br/>(巨大樹の森 ―第57回壁外調査②―)</td>
+					<td>Hiroyuki Tanaka<br/>Shin Wakabayashi</td>
+					<td>Hiroshi Seko</td>
+					<td>August 11, 2013</td>
+					<td>September 13, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(18);">See More..</button></td>
+				</tr>
+				<tr id="episode18" class="episodeDescription">
+					<td colspan="8">Armin, Reiner and Jean are left stranded after their encounter with the Female Titan leaves them with only one horse, but they are soon saved by Krista, who arrives with extra horses. They wait for the order to withdraw, but to their surprise, they discover their operation is continuing albeit heading in a different direction. Meanwhile, news reaches the center group about their right flank being annihilated by the Female Titan as the latter continues to wreak havoc within the formation. Soon, the whole formation reaches the Forest of Giant Trees with only the center row entering it while the rest defend the forest from Titans. Eren realizes something is wrong when his squad has no idea what Erwin's orders are and what Levi is doing. As the Female Titan chases them at their heels, the squad desperately await Levi's command to attack, but Levi instead tells his squad to cover their ears as he fires his flare gun. </td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td>19</td>
+					<td>"Bite: The 57th Exterior Scouting Mission, Part 3"<br/>"Kamitsuku -Dai Gojū-Nana Kai Hekigai Chōsa (3)-"<br/>(噛み付く ―第57回壁外調査③―)</td>
+					<td>Kiyoshi Fukumoto<br/>Tomomi Ikeda</td>
+					<td>Noboru Takagi</td>
+					<td>August 18, 2013</td>
+					<td>September 20, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(19);">See More..</button></td>
+				</tr>
+				<tr id="episode19" class="episodeDescription">
+					<td colspan="8">Levi fires a noise round and tells the squad to keep moving forward. With more of the rearguard getting killed by the Female Titan, Eren begs his squad to let him fight, but they tell him to trust Levi's decision. As he considers turning himself into his Titan form, Levi tells him to choose to either rely on his own strength or believe in his squad mates. Eren starts remembering when Hange, Levi and his squad had him try to transform into a Titan for experimental purposes but was unable to. During a break when he tried to pick up a teaspoon, Eren suddenly partially transformed, much to the squad's shock. They almost attacked him but Levi ordered them to stand down. Hange deduced that Eren is able to transform into a Titan not by solely injuring himself but also due to his desire to fulfill his goals. The squad apologized to Eren and told him they should trust each other. Remembering this, Eren decides to trust his squad's plan. It is then revealed that Levi's squad is bait to lure the Female Titan into an ambush where Erwin and his men fire hundreds of grappling hooks at the Female Titan, trapping her. Levi leaves his squad to meet up with Erwin to find out the identity of the Female Titan. </td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td>20</td>
+					<td>"Erwin Smith: The 57th Exterior Scouting Mission, Part 4"<br/>"Eruvin Sumisu -Dai Gojū-Nana Kai Hekigai Chōsa (4)"<br/>(エルヴィン・スミス ―第57回壁外調査④―)</td>
+					<td>Shintaro Itoga</td>
+					<td>Yasuko Kobayashi</td>
+					<td>August 25, 2013</td>
+					<td>September 27, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(20);">See More..</button></td>
+				</tr>
+				<tr id="episode20" class="episodeDescription">
+					<td colspan="8">With the Female Titan restrained, Erwin and Levi try to figure out its identity with no success as it is able to crystallize its skin to prevent them from cutting out the human inside. Armin, Jean and the rest of Levi's squad realize it was Erwin's plan to use Eren as bait to draw out the mole within the army who joined them after the Walls fell and only told his real plan to those who were part of the Survey Corps before the fall. Meanwhile, the others wonder about what is happening inside the forest, and Levi taunts the Female Titan, prompting her to give a loud scream that draws all Titans in the vicinity to her. Despite the Survey Corps's attempt to stop them, the Titans ignore the humans and eat the Female Titan's body in a frenzy, which makes Erwin call off the expedition. However, knowing that there is no confirmation that the mole has also been eaten by the Titans, Erwin orders Levi to regroup with his squad, while the mole, disguised as a cloaked Survey Corps member, attacks Levi's squad and kills Günther. </td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td>21</td>
+					<td>"Crushing Blow: The 57th Exterior Scouting Mission, Part 5"<br/>"Tettsui -Dai Gojū-Nana Kai Hekigai Chōsa (5)-"<br/>(鉄槌 ―第57回壁外調査⑤―)</td>
+					<td>Hiroyuki Tanaka<br/>Yasushi Muroya</td>
+					<td>Noboru Takagi</td>
+					<td>September 1, 2013	</td>
+					<td>October 4, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(21);">See More..</button></td>
+				</tr>
+				<tr id="episode21" class="episodeDescription">
+					<td colspan="8">Erwin tells Hange that it was a mistake to think all humans who can transform into Titans are like Eren since the Female Titan has unique abilities far beyond that of a novice, while elsewhere the mole transforms into the Female Titan and chases after Levi's squad. Armin theorizes the mole is someone who had seen Eren transform during the invasion of the Trost District. Eren wants to transform into his Titan form, but the squad tells him to trust in their skills and keep moving forward. Petra, Oluo and Eld manage to blind the Female Titan and attempt to cut off her arms and kill her. However, the Female Titan manages to quickly regenerate her right eye and kills the three. Seeing his comrades dead, a grieving Eren transforms into his Titan form, which gets Mikasa and Levi's attention. Believing his comrades and squad's death could have been avoided if he had transformed in the first place, Eren fights the Female Titan in a long battle. The Female Titan finally defeats Eren by taking off his head and swallowing his human body. Mikasa attempts to stop the Female Titan, but to no avail. She is later joined by Levi, who tells her to keep their distance, as the Female Titan is getting tired. </td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>22</td>
+					<td>"Defeated: The 57th Exterior Scouting Mission, Part 6"<br/>"Haisha-tachi -Dai Gojū-Nana Kai Hekigai Chōsa (6)-"<br/>(敗者達 ―第57回壁外調査⑥―)</td>
+					<td>Makoto Bessho<br/>Shinpei Ezaki</td>
+					<td>Noboru Takagi</td>
+					<td>September 8, 2013	</td>
+					<td>October 11, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(22);">See More..</button></td>
+				</tr>
+				<tr id="episode22" class="episodeDescription">
+					<td colspan="8">Levi, who orders Mikasa to distract the Female Titan in order to get Eren back, successfully debilitates the Female Titan at high speeds, but he injures his leg in the process when saving Mikasa from the Female Titan after leaving herself vulnerable when attempting to finish off. Mikasa then goes with Levi, who retrieves Eren from inside the mouth of the Female Titan, leaving it badly wounded and slumped against a tree. The Survey Corps mournfully retrieve the corpses of their fallen comrades, with Erwin ordering that the lost corpses be reported missing in action. However, a Scout named Dieter retrieves the corpse of his friend Ivan against this direct order, which draws the attention of two Titans to the retreating Survey Corps. Mikasa kills one of the Titans to save Dieter, who loses both Ivan's corpse and his friend Jurgen. In order to outrun the remaining Titan, Levi reluctantly orders some of the corpses, including Petra's, be disposed of in order to lighten the wagon's load. Later, Eren wakes up from a dream of his past to find himself and the Survey Corps back at town, safely behind Wall Sina. He becomes angry upon hearing the townspeople berate the Survey Corps's ineptitude, until he sees a boy who admires their bravery, which sends him into tears. All the while, a shocked Levi is questioned by Petra's father over his daughter's whereabouts, who reveals that Petra planned on devoting her life to Levi. The townspeople also become enraged and upset at Erwin over the failure of the mission and the casualties that were sustained. As a result of the failed expedition, Erwin and his subordinates are summoned to the capital, where the final decision of Eren's custody will be made.  </td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>23</td>
+					<td>"Smile: Assault on Stohess, Part 1"<br/>"Hohoemi -Sutohesu-ku Kyūshū (1)-"<br/>(微笑み ―ストヘス区急襲①―)</td>
+					<td>Hirokazu Yamada</td>
+					<td>Hiroshi Seko</td>
+					<td>September 15, 2013</td>
+					<td>October 18, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(23);">See More..</button></td>
+				</tr>
+				<tr id="episode23" class="episodeDescription">
+					<td colspan="8">Annie has a dream of being trained by her father before waking up. In the Stohess District of Wall Sina, the Military Police are ordered to escort the Survey Corps convoy once they enter the capital. The Military Police are shown to be lazy and corrupt; one of Annie's colleagues, Hitch Dreyse, reveals that she joined the police for that reason. Another colleague named Marlowe Freudenberg is disgusted, revealing he joined the Military Police so he could reform it to become a better organization, which Annie respects since he reminds her of Eren. After the convoy has entered the Stohess District, Annie is secretly called by Armin in the alleyways. Armin asks for her help, as he is helping Eren escape the capital, and the one riding in the convoy is actually Jean in disguise. Although refusing at first, she finally agrees after Armin begs again, believing she is a good person. Armin leads Eren, Mikasa and Annie to an underground tunnel. However, Annie refuses to enter as she has noticed Armin behaving strangely and hidden Scouts watching her. Armin finally reveals his suspicion that Annie is the Female Titan, noting that she used Marco's Omni-directional Mobility Gear to kill Sawney and Beane and that the Female Titan did not kill him during the last expedition. Eren and Armin beg Annie to prove them wrong by following them, but knowing her identity is exposed, Annie laughs sadly and tries to transform. Despite the Scouts' attempts to bind and gag her, she succeeds in transforming using the spike in her ring. </td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>24</td>
+					<td>"Mercy: Assault on Stohess, Part 2"<br/>"Jihi -Sutohesu-ku Kyūshū (2)-"<br/>(慈悲 ―ストヘス区急襲②―)</td>
+					<td>Akitoshi Yokoyama<br/>Hiroyuki Tanaka</td>
+					<td>Yasuko Kobayashi</td>
+					<td>September 22, 2013</td>
+					<td>October 25, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(24);">See More..</button></td>
+				</tr>
+				<tr id="episode24" class="episodeDescription">
+					<td colspan="8">A few days before Eren is escorted to the capital, Erwin and Armin reveal to him they have a plan to capture the person they believe is the Female Titan and is shocked when they tell him it is Annie. Back in the present, Eren, Mikasa and Armin manage to escape a tunnel collapse while being hunted by Annie in Titan form. Eren tries to transform but is unable to, and Mikasa suspects that his feelings for Annie are preventing him to do so. When Eren is trapped in another tunnel collapse, Mikasa and Armin distract Annie away from Eren. Meanwhile, Commander Nile Dok of the Military Police demands an explanation from Erwin on what is happening as his men hold him at gunpoint. Mikasa and the rest of the Survey Corps distract and try to capture Annie, while Armin and Jean attempt to free Eren from the rubble. Armin tells Eren that he has to fight Annie as anyone who refuses to sacrifice can never change anything. As Eren thinks about what Armin said, he remembers his hatred for the Smiling Titan who killed his mother. Eren finally transforms into the Rogue Titan and charges at Annie in a rage, smashing into a cathedral. </td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td>25</td>
+					<td>"Wall: Assault on Stohess, Part 3"<br/>"Kabe -Sutohesu-ku Kyūshū (3)-"<br/>(壁 ―ストヘス区急襲③―)</td>
+					<td>Daisuke Tokudo<br/>Masashi Koizuka<br/>Shintaro Itoga<br/>Tetsurō Araki</td>
+					<td>Yasuko Kobayashi</td>
+					<td>September 29, 2013	</td>
+					<td>November 1, 2014</td>
+					<td><button class="btn btn-default" onclick="displayDescription(25);">See More..</button></td>
+				</tr>
+				<tr id="episode25" class="episodeDescription">
+					<td colspan="8">Inside the cathedral, a group of worshipers are crushed to their deaths, leaving the surviving priest awestruck. Eren and Annie fight each other in their Titan forms throughout the Stohess District, causing destruction and civilian deaths while Hange orders her men to stand by before they capture Annie. Meanwhile, Erwin tells Nile that he will accept responsibility for the damage his plan has caused, for which Nile has Erwin arrested and orders the Military Police to help evacuate the civilians. After exchanging several blows, a berserk Eren completely overpowers Annie, who attempts to escape by climbing up Wall Sina. However, Mikasa cuts off Annie's fingers, sending her falling. As Annie falls, she remembers her father asking for forgiveness, telling her to hate the world and asking her to promise him she will come back home. When it appears Eren is about to eat Annie, he stops once he sees her crying, and her body starts encasing itself in crystal. As Eren recuperates, he admits to Mikasa, Armin and Jean that he allowed Annie to get herself encased. As Armin and Jean wonder if sacrificing their humanity to defeat the Titans is worth the price, Erwin attends a government inquiry, where he reveals that he kept his plans secret to prevent leaks. He further explains that despite the deaths and casualties of his plan and how they cannot get any information from Annie now that she is encased, she is proof there are humans that can turn into Titans living within the walls and he plans to find and use them to launch a counterattack against the Titans. In the end, Erwin's name is cleared, Eren stays with the Survey Corps, Annie is put under the Survey Corps's custody and the rest of the 104th Top Trainees go on their different missions. In the epilogue, a piece of Wall Sina crumbles, revealing the face of a Titan within the wall. </td>
+				</tr>
+			</table>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/w3.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			$(function(){
+				$(window).bind("scroll.alert", function() {
+					var $this = $(this);
+					if ($this.scrollTop() >= 400) {
+						$('.titan-content').css('visibility','visible').hide().fadeIn();
+						$this.unbind("scroll.alert");
+					}
+				});
+			});
+			function displayDescription(episode){
+				$('#episode'+episode).fadeToggle();
+			}
+		</script>
+	</body>
+</html>

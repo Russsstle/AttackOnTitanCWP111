@@ -3,183 +3,223 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Attack On Titan</title>
+		<link rel="shortcut icon" href="favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="css/design.css">
 		<style>
-      .galleryDiv{
-        margin:0 auto;
-        width: 90%;
-      }
-      img.zoom {
-        height: 150px;
-        width: 230px;
-        margin-bottom:7px;
-        margin-right:4.5px;
-        transition: all .1s ease-in-out;
-        -webkit-transition: all .1s ease-in-out;
-        -moz-transition: all .1s ease-in-out;
-        -o-transition: all .1s ease-in-out;
-        -ms-transition: all .1s ease-in-out;
-      }
-      .transition {
-        -webkit-transform: scale(1.2); 
-        -moz-transform: scale(1.2);
-        -o-transform: scale(1.2);
-        transform: scale(1.2);
-      }
-      .tab {
-        overflow: hidden;
-        background-color: transparent;
-      }
-      .tab button {
-        background-color: #ccc;
-        color:black;
-        opacity:0.8;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        margin-right:1px;
-        border-style:solid;
-        border-top-width: 1px;
-        border-left-width: 1px;
-        border-right-width: 1px;
-        border-bottom-width: 0px;
-        border-color:#ccc;
-      }
-      .tab button:hover {
-        background-color: #ddd;
-        color:black;
-      }
-      .tab button.active {
-        background-color: white;
-        color:black;
-      }
-      .tabcontent {
-        background: rgba(0, 0, 0, 0.8);
-        display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        border-top: none;
-      }
-      .tabcontent {
-        -webkit-animation: fadeEffect 1s;
-        animation: fadeEffect 1s;
-      }
-      @-webkit-keyframes fadeEffect {
-        from {opacity: 0;}
-        to {opacity: 1;}
-      }
-      @keyframes fadeEffect {
-        from {opacity: 0;}
-        to {opacity: 1;}
-      }
+			.galleryDiv{
+				margin:0 auto;
+				width: 90%;
+			}
+			img.zoom {
+				height: 150px;
+				width: 252px;
+				margin-bottom:7px;
+				margin-right:4.5px;
+				transition: all .1s ease-in-out;
+				-webkit-transition: all .1s ease-in-out;
+				-moz-transition: all .1s ease-in-out;
+				-o-transition: all .1s ease-in-out;
+				-ms-transition: all .1s ease-in-out;
+			}
+			.transition {
+				-webkit-transform: scale(1.2); 
+				-moz-transform: scale(1.2);
+				-o-transform: scale(1.2);
+				transform: scale(1.2);
+			}
+			.tab {
+				overflow: hidden;
+				background-color: transparent;
+			}
+			.tab button {
+				background-color: #ccc;
+				color:black;
+				opacity:0.8;
+				float: left;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				padding: 14px 16px;
+				transition: 0.3s;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				margin-right:1px;
+				border-style:solid;
+				border-top-width: 1px;
+				border-left-width: 1px;
+				border-right-width: 1px;
+				border-bottom-width: 0px;
+				border-color:#ccc;
+			}
+			.tab button:hover {
+				background-color: #ddd;
+				color:black;
+			}
+			.tab button.active {
+				background-color: white;
+				color:black;
+			}
+			.tabcontent {
+				background: rgba(0, 0, 0, 0.8);
+				display: none;
+				padding: 6px 12px;
+				border: 1px solid #ccc;
+				border-top: none;
+			}
+			.tabcontent {
+				-webkit-animation: fadeEffect 1s;
+				animation: fadeEffect 1s;
+			}
+			@-webkit-keyframes fadeEffect {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+			@keyframes fadeEffect {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
 		</style>
 	</head>
 	<body>
-		<img src="images/logo.png" class="center-block animated bounceInDown" height="100px"><br>
-		<nav class="navbar navbar-default center-block animated bounceInDown" style="width:80%;border-radius:10px;border:1px solid white;box-shadow: 0 0 50px #ce1010;">
-				<div class="container-fluid text-center">
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li><a href="home.html">Home</a></li>
-							<li class="active"><a href="javascript:void(0)">Gallery</a></li>
-							<li class="dropdown" style="cursor:pointer">
-								<a class="dropdown-toggle" data-toggle="dropdown">Characters<span class="caret"></span></a>
-								<ul class="dropdown-menu" style="margin-top:-1px;margin-left:-1px">
-										<li><a href="/nwh/amenities/function">Function Room</a></li>
-										<li><a href="/nwh/amenities/pool">Swimming Pool</a></li>
-										<li><a href="/nwh/amenities/bigbite">BigBite Restaurant</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Seasons</a></li>
-						</ul>
-					</div>
+		<img src="images/logo.png" class="center-block animated bounceInRight" height="100px"><br>
+		<nav class="navbar navbar-default center-block" style="visibility:hidden;width:80%;border-radius:10px;border:1px solid white;box-shadow: 0 0 50px #ce1010;">
+			<div class="container-fluid text-center">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="home.html">Home</a></li>
+						<li class="active"><a href="javascript:void(0)">Gallery</a></li>
+						<li class="dropdown" style="cursor:pointer">
+							<a class="dropdown-toggle" data-toggle="dropdown">Characters<span class="caret"></span></a>
+							<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+								<li class="dropdown-submenu">
+									<a href="#">Cadet Corps</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Eren Jaeger</a></li>
+										<li><a href="#">Mikasa Ackermann</a></li>
+										<li><a href="#">Armin Arlelt</a></li>
+										<li><a href="#">Reiner Braun</a></li>
+										<li><a href="#">Bertholdt Hoover</a></li>
+										<li><a href="#">Sasha Braus</a></li>
+										<li><a href="#">Conny Springer</a></li>
+										<li><a href="#">Jean Kirschtein</a></li>
+										<li><a href="#">Historia Reiss</a></li>
+										<li><a href="#">Ymir</a></li>
+									</ul>
+								</li><li class="dropdown-submenu">
+									<a href="#">Scout Regiment</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Erwin Smith</a></li>
+										<li><a href="#">Levi</a></li>
+										<li><a href="#">Hange Zoë</a></li>
+										<li><a href="#">Miche Zacharius</a></li>
+										<li><a href="#">Moblit</a></li>
+										<li><a href="#">Keiji</a></li>
+										<li><a href="#">Goggles</a></li>
+										<li><a href="#">Nifa</a></li>
+										<li><a href="#">Ilse Langnar</a></li>
+									</ul>
+								</li><li class="dropdown-submenu">
+									<a href="#">Garrison</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Dot Pyxis</a></li>
+										<li><a href="#">Hannes</a></li>
+										<li><a href="#">Kitz Woermann</a></li>
+										<li><a href="#">Rico Brzenska</a></li>
+										<li><a href="#">Anka Rheinberger</a></li>
+										<li><a href="#">Phil</a></li>
+									</ul>
+								</li><li class="dropdown-submenu">
+									<a href="#">Military Police</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Nile Dawk</a></li>
+										<li><a href="#">Marlo Freudenberg</a></li>
+										<li><a href="#">Hitch Dreyse</a></li>
+									</ul>
+								</li><li class="dropdown-submenu">
+									<a href="#">Civilians</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Grisha Jaeger</a></li>
+										<li><a href="#">Carla Jaeger</a></li>
+										<li><a href="#">Nick</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#">Titans</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Colossal Titan</a></li>
+										<li><a href="#">Armored Titan</a></li>
+										<li><a href="#">Mysterious Titan</a></li>
+										<li><a href="#">Female Titan</a></li>
+										<li><a href="#">Beast Titan</a></li>
+										<li><a href="#">Dancing Titan</a></li>
+										<li><a href="#">Smiling Titan</a></li>
+										<li><a href="#">Sawney</a></li>
+										<li><a href="#">Beane</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="seasons.html">Seasons</a></li>
+					</ul>
 				</div>
-			</nav>
-		<div class="well center-block animated bounceInDown" style="background-color:black;opacity:0.8;width:80%;border-radius:10px;box-shadow: 0 0 50px #ffffff;color:white">
-      <div class="galleryDiv">
-        <div class="tab">
-          <button class="tablinks active" onclick="openTab(event, 'bigbite')">BigBite</button>
-          <button class="tablinks" onclick="openTab(event, 'family')">Family Room</button>
-          <button class="tablinks" onclick="openTab(event, 'function')">Function Hall</button>
-          <button class="tablinks" onclick="openTab(event, 'junior')">Junior Suite</button>
-          <button class="tablinks" onclick="openTab(event, 'single')">Standard Single Room</button>
-          <button class="tablinks" onclick="openTab(event, 'double')">Standard Double Room</button>
-          <button class="tablinks" onclick="openTab(event, 'pool')">Swimming Pool</button>
-        </div>
-      
-        <div id="bigbite" class="tabcontent" style="display:block">
-          <div class="galleryContent">
-            <img src="images/logo.png" class="zoom">
-          </div>
-        </div>
-      
-        <div id="family" class="tabcontent">
-          <div class="galleryContent">
-          </div>
-        </div>
-      
-        <div id="function" class="tabcontent">
-          <div class="galleryContent">
-          </div>
-        </div>
-        
-        <div id="junior" class="tabcontent">
-          <div class="galleryContent">
-          </div>
-        </div>
-        
-        <div id="single" class="tabcontent">
-          <div class="galleryContent">
-          </div>
-        </div>
-        
-        <div id="double" class="tabcontent">
-          <div class="galleryContent">
-          </div>
-        </div>
-        
-        <div id="pool" class="tabcontent">
-          <div class="galleryContent">
-          </div>
-        </div>
-      </div>
-    </div>
+			</div>
+		</nav>
+		<div class="well center-block animated bounceInRight" style="background-color:black;opacity:0.8;width:80%;border-radius:10px;box-shadow: 0 0 50px #ffffff;color:white">
+			<h1 class="animated bounceInRight">Gallery</h1>
+			<hr/>
+			<img src="images/gallery/1.jpg" class="zoom">
+			<img src="images/gallery/2.jpg" class="zoom">
+			<img src="images/gallery/3.jpg" class="zoom">
+			<img src="images/gallery/4.jpg" class="zoom">
+			<img src="images/gallery/5.jpg" class="zoom">
+			<img src="images/gallery/6.jpg" class="zoom">
+			<img src="images/gallery/7.jpg" class="zoom">
+			<img src="images/gallery/8.jpeg" class="zoom">
+			<img src="images/gallery/9.jpg" class="zoom">
+			<img src="images/gallery/10.jpg" class="zoom">
+			<img src="images/gallery/11.jpg" class="zoom">
+			<img src="images/gallery/12.jpg" class="zoom">
+			<img src="images/gallery/13.jpg" class="zoom">
+			<img src="images/gallery/14.jpg" class="zoom">
+			<img src="images/gallery/15.jpg" class="zoom">
+			<img src="images/gallery/16.jpg" class="zoom">
+			<img src="images/gallery/17.jpg" class="zoom">
+			<img src="images/gallery/18.jpg" class="zoom">
+			<img src="images/gallery/19.jpg" class="zoom">
+			<img src="images/gallery/20.jpg" class="zoom">
+		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/angular.min.js"></script>
 		<script src="js/script.js"></script>
-    <script>
-      $(document).ready(function()
-      {
-        $('.zoom').hover(function()
-        {
-          $(this).addClass('transition');
-        }, function() {
-          $(this).removeClass('transition');
-        });
-      });
-      function openTab(evt, category) {
-        var i, tabcontent, tablinks;
+		<script>
+			$(document).ready(function()
+			{
+				$('.zoom').hover(function()
+				{
+					$(this).addClass('transition');
+				}, function() {
+					$(this).removeClass('transition');
+				});
+			});
+			function openTab(evt, category) {
+				var i, tabcontent, tablinks;
 
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+				}
 
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
 
-        document.getElementById(category).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-    </script>
+				document.getElementById(category).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
 	</body>
 </html>
