@@ -30,7 +30,10 @@
         width: 100%;
 				height: 100%;
 				background-color:black;
-      }
+			}
+			.fastAnimation{
+				animation-duration:700ms;
+			}
 		</style>
 	</head>
 	<body>
@@ -38,10 +41,10 @@
       <video autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
           <source src="videos/opening.MP4" type="video/mp4">
 			</video>
-			<img id="guno" src="images/guno.jpg" height="200px" style="display:none;z-index:2001;position:absolute;top:50px;left:200px;">
-			<img id="vines" src="images/vines.jpg" height="200px" style="display:none;z-index:2001;position:absolute;top:50px;right:200px;">
-			<img id="santos" src="images/santos.jpg" height="200px" style="display:none;z-index:2001;position:absolute;bottom:50px;left:200px;">
-			<img id="young" src="images/young.jpg" height="200px" style="display:none;z-index:2001;position:absolute;bottom:50px;right:200px;">
+			<img id="guno" class="loaderPic" src="images/guno.jpg" height="200px" style="display:none;z-index:2001;position:absolute;top:50px;left:200px;">
+			<img id="vines" class="loaderPic" src="images/vines.jpg" height="200px" style="display:none;z-index:2001;position:absolute;top:50px;right:200px;">
+			<img id="santos" class="loaderPic" src="images/santos.jpg" height="200px" style="display:none;z-index:2001;position:absolute;bottom:50px;left:200px;">
+			<img id="young" class="loaderPic" src="images/young.jpg" height="200px" style="display:none;z-index:2001;position:absolute;bottom:50px;right:200px;">
 		</div>
 		<div class="hidden-content" style="display:none">
 			<img src="images/logo.png" class="center-block animated bounceInLeft" height="100px"><br>
@@ -159,7 +162,8 @@
 					}
 				});
 			});
-			setTimeout("$('.fullscreen-bg').fadeOut('slow');$('.hidden-content').fadeIn();",13000);
+			setTimeout("$('.fullscreen-bg').addClass('animated fadeOutRight');",13000);
+			setTimeout("$('.hidden-content').fadeIn('5000');",13500);
 			setTimeout("$('#guno').fadeIn('fast');",3900);
 			setTimeout("$('#vines').fadeIn('fast');",4400);
 			setTimeout("$('#santos').fadeIn('fast');",4900);
@@ -170,6 +174,12 @@
 				$('#santos').addClass("animated shake infinite");
 				$('#young').addClass("animated shake infinite");
 			},6500);
+			setTimeout(function(){
+				$('#guno').addClass("fastAnimation fadeOutLeft");
+				$('#vines').addClass("fastAnimation fadeOutUp");
+				$('#santos').addClass("fastAnimation fadeOutDown");
+				$('#young').addClass("fastAnimation fadeOutRight");
+			},9000);
 		</script>
 	</body>
 </html>
