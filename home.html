@@ -156,7 +156,7 @@
 			$(function(){
 				$(window).bind("scroll.alert", function() {
 					var $this = $(this);
-					if ($this.scrollTop() >= 400) {
+					if ($this.scrollTop() >= 300) {
 						$('.titan-content').css('visibility','visible').hide().fadeIn();
 						$this.unbind("scroll.alert");
 					}
