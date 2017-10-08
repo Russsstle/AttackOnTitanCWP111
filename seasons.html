@@ -10,10 +10,8 @@
 		<style>
 			.tab {
 				overflow: hidden;
-				background-color: transparent;
-			}
-			.tab:nth-child(1) {
-				margin-left: 33%;
+        background-color: transparent;
+        width:max-content;
 			}
 			.tab button {
 				background-color: rgb(156, 4, 4) !important;
@@ -158,11 +156,11 @@
 		</nav>
 		<div class="well center-block animated bounceInUp" style="background-color:black;opacity:0.8;width:80%;border-radius:10px;box-shadow: 0 0 50px #ffffff;color:white">
 			<div class="seasonDiv">
-				<div class="tab">
+				<div class="tab center-block">
 					<button class="tablinks active" onclick="openTab(event, 'season1')">Season 1</button>
 					<button class="tablinks" onclick="openTab(event, 'season2')">Season 2</button>
 					<button class="tablinks" onclick="openTab(event, 'ova')">OVA</button>
-					<button class="tablinks" onclick="openTab(event, 'short')">Bonus shorts</button>
+					<button class="tablinks" onclick="openTab(event, 'short')">Bonus Shorts</button>
 				</div>
 				<br/>
 				<div id="season1" class="tabcontent" style="display:block">
