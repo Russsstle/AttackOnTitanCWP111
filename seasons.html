@@ -166,7 +166,7 @@
 				</div>
 				<br/>
 				<div id="season1" class="tabcontent" style="display:block">
-					<div class="seasonContent">
+					<div class="seasonContent animated fadeInUp">
 						<table border="1" style="width:100%">
 							<th>No. Overall</th>
 							<th>No. in Season</th>
@@ -517,8 +517,8 @@
 						</table>
 					</div>
 				</div>
-				<div id="season2" class="tabcontent">
-					<div class="seasonContent">
+				<div id="season2" class="tabcontent" style="display:none">
+					<div class="seasonContent animated fadeInUp">
 						<table border="1" style="width:100%">
 							<th>No. Overall</th>
 							<th>No. in Season</th>
@@ -687,8 +687,8 @@
 						</table>
 					</div>
 				</div>
-				<div id="ova" class="tabcontent">
-					<div class="seasonContent">
+				<div id="ova" class="tabcontent" style="display:none">
+					<div class="seasonContent animated fadeInUp">
 						<table border="1" style="width:100%">
 							<th>No.</th>
 							<th>Title</th>
@@ -724,8 +724,8 @@
 						</table>
 					</div>
 				</div>
-				<div id="short" class="tabcontent">
-					<div class="seasonContent">
+				<div id="short" class="tabcontent" style="display:none">
+					<div class="seasonContent animated fadeInUp">
 						<table border="1" style="width:100%">
 							<th>No.</th>
 							<th>Title</th>
@@ -838,7 +838,7 @@
 			// Declare all variables
 			var i, tabcontent, tablinks;
 
-			// Get all elements with class="tabcontent" and hide them
+			// Get all elements with class="tabcontent" style="display:none" and hide them
 			tabcontent = document.getElementsByClassName("tabcontent");
 			for (i = 0; i < tabcontent.length; i++) {
 					tabcontent[i].style.display = "none";
