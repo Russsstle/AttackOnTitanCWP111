@@ -6,6 +6,7 @@
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="css/backtotop.css">
 		<link rel="stylesheet" type="text/css" href="css/design.css">
 		<style>
 			.titan-content:hover{
@@ -23,7 +24,7 @@
         overflow: hidden;
         z-index: 2000;
       }
-      .fullscreen-bg__video {
+      .fullscreen-bg__video  {
         position: absolute;
         top: 0;
         left: 0;
@@ -39,7 +40,7 @@
 	<body>
     <div class="fullscreen-bg animated zoomInUp">
       <video autoplay class="fullscreen-bg__video">
-          <source src="videos/opening.MP4" type="video/mp4">
+        <source src="videos/opening.MP4" type="video/mp4">
 			</video>
 			<img id="guno" class="loaderPic" src="images/guno.jpg" height="200px" style="display:none;z-index:2001;position:absolute;top:50px;left:200px;">
 			<img id="vines" class="loaderPic" src="images/vines.jpg" height="200px" style="display:none;z-index:2001;position:absolute;top:50px;right:200px;">
@@ -64,7 +65,7 @@
 				<h1 class="animated bounceInLeft">Home</h1>
 				<hr/>
 				<img src="images/wikiLogo.png" class="center-block animated bounceInLeft">
-				<div class="well center-block titan-content" style="visibility: hidden;width:80%;background-color:black;opacity:0.8;border-radius:10px;color:white">
+				<div class="well center-block titan-content" style="visibility:hidden;width:80%;background-color:black;opacity:0.8;border-radius:10px;color:white">
 					<p>
 						Attack on Titan (Japanese: 進撃の巨人 Hepburn: Shingeki no Kyojin, lit. "Advancing Giant") is a Japanese manga series written and illustrated by Hajime Isayama. The series began in Kodansha's Bessatsu Shōnen Magazine on September 9, 2009, and has been collected into 23 tankōbon volumes as of August 2017. It is set in a world where humanity lives in cities surrounded by enormous walls; a defense against the Titans, gigantic humanoids that eat humans seemingly without reason. The story initially centers on Eren Yeager and his childhood friends Mikasa Ackerman and Armin Arlert, who join the military to fight the Titans after their home town is invaded and Eren's mother is eaten. However, as the story progresses and the truths about the Titans are slowly revealed to the reader, the narrative shifts to encompass Historia Reiss, squad leader Levi, Eren's father Grisha, and other supporting characters.
 					</p>
@@ -79,19 +80,19 @@
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/w3.js"></script>
+    <script src="js/backtotop.js"></script>
 		<script src="js/script.js"></script>
 		<script>
 			$("video").prop("volume", 0.5);
 			$(function(){
-				$(window).bind("scroll.alert", function() {
-					var $this = $(this);
-					if ($this.scrollTop() >= 300) {
-						$('.titan-content').css('visibility','visible').hide().fadeIn();
-						$this.unbind("scroll.alert");
-					}
-				});
-			});
+        $(window).bind("scroll.alert", function() {
+          var $this = $(this);
+          if ($this.scrollTop() >= 300) {
+            $('.titan-content').css('visibility','visible').hide().fadeIn();
+            $this.unbind("scroll.alert");
+          }
+        });
+      });
 			setTimeout("$('#guno').fadeIn('fast');",3900);
 			setTimeout("$('#vines').fadeIn('fast');",4400);
 			setTimeout("$('#santos').fadeIn('fast');",4900);
@@ -117,7 +118,13 @@
 				$('.fullscreen-bg').addClass('zoomOutRight');
 			},13000);
 			setTimeout("$('.hidden-content').fadeIn('5000');",13300);
-			setTimeout("$('.navbar').removeClass('bounceInLeft')",15000);
+			setTimeout(function(){
+        $('.navbar').removeClass('bounceInLeft');
+        if(!hasVerticalScroll())
+        {
+          $('.titan-content').css('visibility','visible');
+        }
+      },15000);
 		</script>
 	</body>
 </html>
