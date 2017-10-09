@@ -27,7 +27,7 @@
 				-o-transition: all .1s ease-in-out;
 				-ms-transition: all .1s ease-in-out;
 			}
-			.transition {
+			.zoom:hover {
 				-webkit-transform: scale(1.2); 
 				-moz-transform: scale(1.2);
 				-o-transform: scale(1.2);
@@ -129,15 +129,6 @@
     <script src="js/backtotop.js"></script>
 		<script src="js/script.js"></script>
 		<script>
-			$(document).ready(function()
-			{
-				$('.zoom').hover(function()
-				{
-					$(this).addClass('transition');
-				}, function() {
-					$(this).removeClass('transition');
-				});
-			});
 			function openTab(evt, category) {
 				var i, tabcontent, tablinks;
 
